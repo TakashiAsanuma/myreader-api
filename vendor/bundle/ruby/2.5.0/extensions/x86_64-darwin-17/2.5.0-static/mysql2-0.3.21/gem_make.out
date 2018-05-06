@@ -1,0 +1,33 @@
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/mysql2-0.3.21/ext/mysql2
+/Users/asanumatakashi/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20180506-45749-qa87lq.rb extconf.rb
+checking for ruby/thread.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_wait_for_single_fd()... yes
+checking for rb_hash_dup()... yes
+checking for rb_intern3()... yes
+-----
+Using mysql_config at /usr/local/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for mysqld_error.h... yes
+-----
+Setting rpath to /usr/local/Cellar/mysql/5.7.22/lib
+-----
+creating Makefile
+
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/mysql2-0.3.21/ext/mysql2
+make "DESTDIR=" clean
+
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/mysql2-0.3.21/ext/mysql2
+make "DESTDIR="
+compiling client.c
+compiling infile.c
+compiling mysql2_ext.c
+compiling result.c
+linking shared-object mysql2/mysql2.bundle
+
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/mysql2-0.3.21/ext/mysql2
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20180506-45749-1lglcry/mysql2

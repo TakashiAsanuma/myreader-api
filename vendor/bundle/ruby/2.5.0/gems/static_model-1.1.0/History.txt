@@ -1,0 +1,73 @@
+== 1.0.4 2013-03-06
+
+*  define respond_to_missing to include methods inferred from method_missing [sgtFloyd]
+
+== 1.0.0 2011-08-20
+
+* Remove ActiveSupport as a dependency (StaticModel has no direct dependencies now)
+* Fix Rails 3 compatability, you might need to explicitly set your load path
+  with StaticModel::Base.load_path=
+
+== 0.3.1 2010-10-22
+
+* Ruby 1.9.2 Compatibility fixes
+
+== 0.3.0 2010-05-06
+
+* Attributes can now be defined within the class with 
+  
+  attribute :name, options
+  
+  These create the actual methods to ensure that this model/instance always
+  responds to the accessors for this attribute
+  
+* Mock out destroyed? for AR 2.3.5
+
+== 0.2.4 2009-12-14
+
+* Finds don't care if attribute doesn't exist on certain records
+* Base#has_attribute?
+
+== 0.2.3 2009-12-03
+
+* Fixed active_support dependency
+* Switched to jeweler
+* Tested against Ruby 1.9.1
+
+== 0.2.2 2008-12-07
+
+* 1 minor enhancements
+	* YAML data files can now include ERB - see tests for examples
+	
+== 0.2.1 2008-12-03
+
+* 1 minor enhancement
+	
+		* IDs are assigned automatically if not given in the YAML file
+		
+== 0.2.0 2008-11-27
+	
+	* 2 major enhancements
+			
+		* StaticModel generator
+		* 'class_attributes' and ability to set default for record attributes
+		* Real documentation on the website: http://quirkey.rubyforge.org/static_model
+
+== 0.1.5 2008-09-18
+
+* 1 minor enhancement
+	
+	* better handling of empty YAML files (ienders)
+
+== 0.1.0 2008-08-27
+
+* 1 minor enchancement
+	
+	* fixed the dynamic finders to match AR's behavior AKA find_by === find_first_by
+
+== 0.1.0 2008-07-09
+
+* 1 major enhancement:
+  * Initial release
+		- Basic functionality
+		- Full test suite using shoulda

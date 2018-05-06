@@ -1,0 +1,19 @@
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+/Users/asanumatakashi/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20180506-25607-1r148rq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/asanumatakashi/project/myreader-api/vendor/bundle/ruby/2.5.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180506-25607-nvfs47/byebug

@@ -1,0 +1,40 @@
+{
+  "apiVersion": "v1",
+  "swaggerVersion": "1.2",
+  "basePath": "http://localhost:8080",
+  "resourcePath": "feeds",
+  "apis": [
+    {
+      "path": "/feeds",
+      "operations": [
+        {
+          "summary": "Fetches all Feed items",
+          "notes": "This lists all the active feeds",
+          "consumes": [
+            "application/json"
+          ],
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": "Feed",
+              "message": "Success"
+            },
+            {
+              "code": 404,
+              "responseModel": null,
+              "message": "Not Found"
+            },
+            {
+              "code": 500,
+              "responseModel": null,
+              "message": "Internal Server Error"
+            }
+          ],
+          "nickname": "Feeds#index",
+          "method": "get"
+        }
+      ]
+    }
+  ],
+  "authorizations": null
+}

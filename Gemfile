@@ -34,6 +34,8 @@ gem 'feedjira'
 gem 'json'
 gem 'mysql2'
 gem 'static_model'
+gem 'grape-swagger-rails'
+gem 'swagger-docs'
 gem 'whenever', require: false
 
 group :development, :test do

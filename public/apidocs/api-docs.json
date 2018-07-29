@@ -1,0 +1,19 @@
+{
+  "apiVersion": "v1",
+  "swaggerVersion": "1.2",
+  "basePath": "http://localhost:8080",
+  "apis": [
+    {
+      "path": "/apidocs/feeds.{format}",
+      "description": "Feed Management"
+    }
+  ],
+  "authorizations": null,
+  "info": {
+    "title": "MyReader API",
+    "description": "MyReader operation API",
+    "contact": "rmacchoj7@gmail.com",
+    "license": "Apache 2.0",
+    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }
+}

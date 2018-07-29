@@ -1,6 +1,17 @@
 class FeedsController < ApplicationController
   before_action :set_feed, only: [:show, :update, :destroy]
 
+  swagger_controller :feeds, "Feed Management"
+
+  swagger_api :index do
+    summary "Fetches all Feed items"
+    notes "This lists all the active feeds"
+    consumes [ "application/json" ]
+    response :ok, "Success", :Feed
+    response :not_found
+    response :internal_server_error
+  end
+
   # GET /feeds
   def index
     @feeds = Feed.all

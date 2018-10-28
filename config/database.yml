@@ -10,9 +10,7 @@ default: &default
   timeout: 5000
   encoding: utf8
   database: myreader
-  username: root
-  password:
-  host: localhost
+  url: <%= ENV['DATABASE_URL'] %>
 
 development:
   <<: *default
